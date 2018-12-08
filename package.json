@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npm run javascript && npm run static",
     "javascript": "npx rollup -c",
-    "static": "rsync -rm src/static dist"
+    "serve": "npm run build && npx http-server ./dist/public/index.html -c-1",
+    "static": "rsync -rm src/public dist"
   },
   "keywords": [],
   "author": "",
