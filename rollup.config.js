@@ -9,7 +9,7 @@ const { version } = pkg;
 export default {
   input: 'src/scripts/app.js',
   output: {
-    file: 'dist/scripts/app.js',
+    file: 'dist/app.js',
     format: 'iife'
   },
   plugins: [

@@ -6,18 +6,16 @@
   "scripts": {
     "build": "npm run javascript && npm run static",
     "javascript": "npx rollup -c",
-    "serve": "npm run build && npx http-server ./dist/public/index.html -c-1",
-    "static": "rsync -rm src/public dist"
+    "serve": "npm run build && npx mock-server",
+    "static": "rsync -rm src/static/ dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "author": "Liam McArdle",
+  "dependencies": {},
+  "devDependencies": {
+    "@staticdeploy/mock-server": "^1.9.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.67.4",
     "rollup-plugin-replace": "^2.1.0"
-  },
-  "devDependencies": {
-    "http-server": "^0.11.1"
   }
 }
