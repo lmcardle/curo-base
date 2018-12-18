@@ -2,7 +2,7 @@
   "name": "curo-base",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "build": "npm run javascript && npm run static",
     "javascript": "npx rollup -c",
@@ -11,11 +11,16 @@
   },
   "keywords": [],
   "author": "Liam McArdle",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
   "devDependencies": {
     "@staticdeploy/mock-server": "lmcardle/mock-server#middleware",
     "rimraf": "^2.6.2",
     "rollup": "^0.67.4",
-    "rollup-plugin-replace": "^2.1.0"
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-typescript2": "^0.18.1",
+    "typescript": "^3.2.2"
   }
 }
